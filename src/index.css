@@ -89,5 +89,56 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    cursor: url('/cursor.svg') 1 1, auto;
+  }
+}
+
+/* Utilities and animations for gradients, glows and float effects used across the landing */
+@layer utilities {
+  /* Use pointer.svg for interactive elements */
+  a,
+  button:not(:disabled),
+  [role="button"],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  summary,
+  .cursor-pointer,
+  .link,
+  .clickable {
+    cursor: url('/pointer.svg') 1 1, pointer;
+  }
+
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+
+  .bg-gradient-card {
+    background-image: var(--gradient-card);
+  }
+
+  .shadow-glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+
+  .shadow-glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Smooth gradient text utility already paired with bg-clip-text text-transparent */
+  .text-gradient-primary {
+    background-image: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }

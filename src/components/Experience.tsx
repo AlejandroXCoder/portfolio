@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const timeline = [
   {
@@ -26,6 +27,7 @@ const timeline = [
 ];
 
 export const Experience = () => {
+  const { t } = useTranslation();
   return (
     <section id="experience" className="min-h-screen flex items-center py-20">
       <div className="container mx-auto px-4">
@@ -37,10 +39,10 @@ export const Experience = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Experiencia & Educación
+            {t("experience.title")}
           </h2>
           <p className="text-lg text-muted-foreground">
-            Mi trayectoria profesional y académica
+            {t("experience.subtitle")}
           </p>
         </motion.div>
 

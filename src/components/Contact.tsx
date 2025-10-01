@@ -5,8 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,10 +35,10 @@ export const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Contacto
+            {t("contact.title")}
           </h2>
           <p className="text-lg text-muted-foreground">
-            ¿Tienes un proyecto en mente? ¡Hablemos!
+            {t("contact.subtitle")}
           </p>
         </motion.div>
 
@@ -82,7 +84,7 @@ export const Contact = () => {
                 type="submit"
                 className="w-full bg-gradient-primary hover:shadow-glow-primary transition-all group"
               >
-                Enviar Mensaje
+                {t("contact.send")}
                 <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
@@ -101,7 +103,7 @@ export const Contact = () => {
               
               <div className="space-y-4">
                 <motion.a
-                  href="https://github.com"
+                  href="https://github.com/AlejandroXCoder"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ x: 10 }}
@@ -114,7 +116,7 @@ export const Contact = () => {
                 </motion.a>
 
                 <motion.a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/alejandro-carrion-rincon"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ x: 10 }}
@@ -127,7 +129,7 @@ export const Contact = () => {
                 </motion.a>
 
                 <motion.a
-                  href="mailto:contact@example.com"
+                  href="mailto:alexjanxs@gmail.com"
                   whileHover={{ x: 10 }}
                   className="flex items-center gap-3 text-muted-foreground hover:text-accent transition-colors group"
                 >

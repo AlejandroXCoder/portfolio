@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const projects = [
   {
@@ -27,6 +28,7 @@ const projects = [
 ];
 
 export const Projects = () => {
+  const { t } = useTranslation();
   return (
     <section id="projects" className="min-h-screen flex items-center py-20">
       <div className="container mx-auto px-4">
@@ -38,10 +40,10 @@ export const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Proyectos Destacados
+            {t("projects.title")}
           </h2>
           <p className="text-lg text-muted-foreground">
-            Aplicaciones fullstack con arquitecturas modernas
+            {t("projects.subtitle")}
           </p>
         </motion.div>
 
@@ -91,14 +93,14 @@ export const Projects = () => {
                     className="flex-1 group/btn border-primary/50 hover:bg-primary/10"
                   >
                     <Github className="mr-2 h-4 w-4 group-hover/btn:rotate-12 transition-transform" />
-                    GitHub
+                    {t("projects.github")}
                   </Button>
                   <Button
                     size="sm"
                     className="flex-1 bg-gradient-primary hover:shadow-glow-primary transition-all group/btn"
                   >
                     <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                    Demo
+                    {t("projects.demo")}
                   </Button>
                 </div>
               </motion.div>

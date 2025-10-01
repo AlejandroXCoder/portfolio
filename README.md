@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# Arcane Artisan — Portafolio
 
-## Project info
+Portafolio personal de David Alejandro Carrión Rincón. Un sitio moderno, minimalista y con animaciones suaves para presentar experiencia, proyectos y contacto.
 
-**URL**: https://lovable.dev/projects/24f14d1e-879e-4dea-95bc-1ee626cb12c6
+<p align="center">
+	<img src="https://github.com/AlejandroXCoder/arcane-artisan/blob/main/public/portfolio.png?raw=1" alt="Portada del portafolio" width="920" />
+	<br/>
+	<em>La imagen principal puede reemplazarse por tu propia captura en <code>public/portfolio.png</code>.</em>
+	<br/>
+</p>
 
-## How can I edit this code?
+## Puntos clave
 
-There are several ways of editing your application.
+- UI moderna con Tailwind (tokens en HSL), glassmorphism y gradientes sutiles.
+- Animaciones con Framer Motion: stagger, fade/slide-in, microinteracciones, y un Icon Cloud 3D.
+- Multilenguaje ES/EN con react-i18next y LanguageToggle (se persiste en localStorage).
+- Modo oscuro/claro con ThemeToggle y preferencia del sistema.
+- Componentes shadcn/ui + Radix (accesibilidad por defecto).
+- Routing con React Router y estados de toasts ya integrados.
 
-**Use Lovable**
+## Secciones
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/24f14d1e-879e-4dea-95bc-1ee626cb12c6) and start prompting.
+- Hero: presentación + CTA y espacio para avatar PNG sin fondo (pon tu imagen en <code>public/avatar.png</code>).
+- About: layout 2 columnas: IconCloud 3D a la izquierda y bento grid 2x2 de skills a la derecha.
+- Projects: tarjetas con stack, hover y botones a GitHub/Demo.
+- Experience: timeline de experiencia y educación.
+- Contact: formulario básico con feedback por toast + enlaces sociales.
+- NotFound (404): página coherente con el estilo, con avatar y acciones.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tecnologías
 
-**Use your preferred IDE**
+- Vite + React 18 + TypeScript
+- Tailwind CSS + shadcn/ui + Radix
+- Framer Motion
+- TanStack Query
+- React Router
+- i18next + react-i18next
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Estructura
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```
+src/
+	components/        # Navbar, Hero, About, Projects, etc.
+	pages/             # Index, NotFound
+	i18n.ts            # Configuración de internacionalización
+public/
+	avatar.png         # Foto (PNG sin fondo) para el Hero y 404
+	portfolio.png      # Imagen para este README (opcional)
+```
 
-Follow these steps:
+## Uso rápido
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Requisitos: Node.js 18+
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Desarrollo:
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Build de producción:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## Personalización
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Avatar: reemplaza <code>public/avatar.png</code> por tu PNG sin fondo.
+- Imagen del README: actualiza <code>public/portfolio.png</code> y el enlace de arriba si cambias el nombre.
+- Colores/tokens: ajusta <code>src/index.css</code> en <code>@layer base</code>.
+- Idiomas: edita textos en <code>src/i18n.ts</code>.
 
-## What technologies are used for this project?
+## Créditos
 
-This project is built with:
+- Iconos: Simple Icons y Lucide.
+- UI: shadcn/ui + Radix Primitives.
+- Animaciones: Framer Motion.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/24f14d1e-879e-4dea-95bc-1ee626cb12c6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© David Alejandro Carrión Rincón. Todos los derechos reservados.
