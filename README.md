@@ -3,7 +3,7 @@
 Portafolio personal de David Alejandro Carrión Rincón. Un sitio moderno, minimalista y con animaciones suaves para presentar experiencia, proyectos y contacto.
 
 <p align="center">
-	<img src="https://github.com/AlejandroXCoder/arcane-artisan/blob/main/public/portfolio.png?raw=1" alt="Portada del portafolio" width="920" />
+	<img src="https://github.com/AlejandroXCoder/portfolio/blob/main/public/portfolio.png?raw=1" alt="Portada del portafolio" width="920" />
 	<br/>
 </p>
 
