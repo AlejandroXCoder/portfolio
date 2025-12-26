@@ -60,11 +60,14 @@ export const Hero = () => {
               transition={{ delay: 0.8 }}
             >
               <Button
+                asChild
                 size="lg"
                 className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 group"
               >
-                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                {t("hero.ctaCv")}
+                <a href="/CV%20-%20David%20Carrion.pdf" download="CV - David Carrion.pdf" aria-label="Descargar CV en PDF">
+                  <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                  {t("hero.ctaCv")}
+                </a>
               </Button>
               <Button
                 size="lg"
