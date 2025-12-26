@@ -2,6 +2,8 @@
 
 Portafolio personal de David Alejandro Carrión Rincón. Un sitio moderno, minimalista y con animaciones suaves para presentar experiencia, proyectos y contacto.
 
+**🌐 Visita el sitio en vivo:** [https://portfolio-alejandro-carrion.vercel.app](https://portfolio-alejandro-carrion.vercel.app)
+
 <p align="center">
 	<img src="https://github.com/AlejandroXCoder/portfolio/blob/main/public/portfolio.png?raw=1" alt="Portada del portafolio" width="920" />
 	<br/>
