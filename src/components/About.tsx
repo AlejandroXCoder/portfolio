@@ -113,9 +113,9 @@ export const About = () => {
                   "radial-gradient(1200px circle at 20% 0%, hsl(var(--primary)/0.08), transparent 35%), radial-gradient(900px circle at 80% 100%, hsl(var(--secondary)/0.08), transparent 35%)",
               }}
             />
-            <div className="relative">
+            <div className="relative w-full flex justify-center">
               <IconCloud
-                className="mx-auto h-[480px] md:h-[480px] w-[480px] md:w-[480px]"
+                className="mx-auto h-[280px] w-[280px] sm:h-[340px] sm:w-[340px] md:h-[400px] md:w-[400px] lg:h-[420px] lg:w-[420px]"
                 iconClassName="transition-transform duration-200 will-change-transform hover:scale-110 focus:scale-110"
                 slugs={[
                   "react",
